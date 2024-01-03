@@ -36,6 +36,8 @@ if (isset($_GET['ville'])){
 }
 if (isset($_GET['codePostal'])){
     $retour->adresse['codePostal'] = $_GET["codePostal"];
+}else {
+    $retour->adresse['codePostal'] = "";
 }
 
 
