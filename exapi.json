@@ -1,0 +1,17 @@
+{
+    "utilisateur": {
+        "nom": "Ducon",
+        "prenom": "Pierre-françois",
+        "age": 30,
+        "adresse": {
+            "rue": "123 rue de la République",
+            "ville": "Paris",
+            "codePostal": "75001"
+        },
+        "hobbies": [
+            "lecture",
+            "voyage",
+            "manger"
+        ]
+    }
+}
