@@ -8,6 +8,16 @@
 </head>
 <body>
     
+<button onclick="nouveau()">Nouveau</button>
+<a href="connexionapi.php">Nouveau</a>
+
+<!-- <script>
+    function nouveau(){
+        
+    }
+</script> -->
+
+
 </body>
 </html>
 
