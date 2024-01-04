@@ -6,19 +6,18 @@ try {
 } catch (PDOException $e) {
     echo 'false';
 }
-$_GET['departements'];
-$_GET['emplacement'];
 
 $nomDepartement = "";
 $emplacement = "";
+$isCreate = false;
 
-if(isset($_GET['$nomDepartement'])){
+if (isset($_GET['nomDepartement'])) {
     $nomDepartement = $_GET['nomDepartement'];
 }
-if(isset($_GET['$emplacement'])){
+if (isset($_GET['emplacement'])) {
     $emplacement = $_GET['emplacement'];
 }
-if (isset($_GET['isCreate'])){
+if (isset($_GET['isCreate'])) {
     $isCreate = true;
 }
 if ($isCreate) {
@@ -27,12 +26,10 @@ if ($isCreate) {
 }
 
 
-// $test = $dbh->prepare('INSERT INTO `departements`(`nom_departement`, `emplacement`) VALUES ("'.$nomDepartement.'","'.$emplacement.'")');
-// $test->execute();
-
 $test = $dbh->prepare('SELECT * FROM departements');
 $test->execute();
-$test = $test->fetchALL();
-//print_r($test);
+$retour = $test->fetchAll();
 
-echo json_encode($test, JSON_UNESCAPED_UNICODE);
+
+
+echo json_encode($retour, JSON_UNESCAPED_UNICODE);
