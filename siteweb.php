@@ -11,11 +11,12 @@
 <button onclick="nouveau()">Nouveau</button>
 <a href="connexionapi.php">Nouveau</a>
 
-<!-- <script>
-    function nouveau(){
-        
-    }
-</script> -->
+<form action="connexionapi.php" method="get">
+    <input type="text" name="departemnt" id="">
+    <input type="text" name="emplacement" id="">
+    <!-- <input type="text" name="isCreate" id=""> -->
+    <button type="submit">Valider</button>
+</form>
 
 
 </body>

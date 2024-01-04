@@ -1,6 +1,9 @@
 <?php
 
-$url = "http://localhost/API/API2.php?nomDepartement=pffff&emplacement=ffffp&isCreate";
+$departement = $_GET['departement'];
+$emplacement = $_get['emplacement'];
+
+$url = "http://localhost/API/API2.php?nomDepartement=.$departement.&emplacement=.$emplacement.&isCreate";
 
 $curl = curl_init();
 
